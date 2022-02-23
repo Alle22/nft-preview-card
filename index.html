@@ -6,63 +6,43 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-
-
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-        color:white;
-      }
-      .attribution a {
-        color: hsl(223, 35%, 67%);
-      }
-    </style>
   </head>
   <body>
-    <div class="card-wrapper">
-      <div class="card">
-        <div class="hero">
-            <a href="#"><img src="images/image-equilibrium.jpg" alt="equilibrium" /></a>
-          </div>
-          <div class="content">
-            <h3 class="card-title"><a class="link" href=#>Equilibrium #3429</a></h3>
-            <p>Our Equilibrium collection promotes balance and calm.</p>
-            <div class="offer">
-              <div class="price">
-                <div class="icon-box1"><img class="icon1" src="images/icon-ethereum.svg" alt="ethereum" /></div>
-                <div class="currency">0.041 ETH</div>
+      <main class="container">
+          <div class="card">
+            <div class="preview">
+                <img class="main-image" src="images/image-equilibrium.jpg" alt="equilibrium nft preview" />
+                <div class="overlay">
+                  <div class="img-preview">
+                    <img src="./images/icon-view.svg" alt="view icon">
+                  </div>
+                </div>
               </div>
-              <div class="timer">
-                <div class="icon-box2"><img class="icon2" src="images/icon-clock.svg" alt="clock icon" /></div>
-                <div class="time-left">3 days left</div>
+              <div class="content">
+                <h1 class="card-title"><a class="link" href=#>Equilibrium #3429</a></h3>
+                <p>Our Equilibrium collection promotes balance and calm.</p>
+                <div class="offer">
+                  <div class="price">
+                    <img class="icon" src="images/icon-ethereum.svg" alt="ethereum" />
+                    <div class="currency">0.041 ETH</div>
+                  </div>
+                  <div class="timer">
+                   <img class="icon" src="images/icon-clock.svg" alt="clock icon" />
+                    <div class="time-left">3 days left</div>
+                  </div>
+                </div>
+               <hr>
+                <div class="creator">
+                  <img class="avatar" src="images/image-avatar.png" alt="Jules Wyvern">
+                  <p><span>Creation of </span><a class="link"href="#">Jules Wyvern </a></p>
               </div>
-            </div> 
-           <hr>
-            <div class="footer">
-              <div class="avatar-box"><img class="avatar" src="images/image-avatar.png" alt="Jules Wyvern"></div>
-              <div class="creation">Creation of <a class="link"href="#">Jules Wyvern</a></div>
             </div>
           </div>
-        </div>
-    </div> 
-    
-    <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Alexandra</a>.
+      </main>
+      
   </body>
 </html>
